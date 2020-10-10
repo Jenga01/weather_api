@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7aa6beea-2f3a-489e-93b4-201cf59331f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WeatherController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +157,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1iaQem9Fy1QMPPebCxBuK2LPCox" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -153,6 +171,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\weather_API\app\Http\Controllers\API" />
+      <recent name="C:\xampp\htdocs\weather_API\app\Http\Controllers" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -169,7 +193,11 @@
       <option name="presentableId" value="Default" />
       <updated>1602143321248</updated>
       <workItem from="1602143322381" duration="665000" />
-      <workItem from="1602145400220" duration="10788000" />
+      <workItem from="1602145400220" duration="29249000" />
+      <workItem from="1602229576452" duration="9092000" />
+      <workItem from="1602247781471" duration="1342000" />
+      <workItem from="1602266607953" duration="3013000" />
+      <workItem from="1602333330474" duration="6926000" />
     </task>
     <servers />
   </component>
@@ -186,12 +214,25 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1416" y="490" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1602333671794">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1416" y="490" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1602333671794" />
     <state x="1485" y="381" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602149712304">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1485" y="381" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1602149712304" />
+    <state x="1450" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602338658773">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1450" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1602338658773" />
+    <state x="1500" y="455" key="FileChooserDialogImpl" timestamp="1602249129001">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1500" y="455" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1602249129001" />
     <state width="3397" height="401" key="GridCell.Tab.0.bottom" timestamp="1602145351389">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -208,9 +249,24 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="3397" height="401" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1602145351389" />
+    <state x="1466" y="423" key="NewPhpClassDialog" timestamp="1602337442094">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1466" y="423" key="NewPhpClassDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1602337442094" />
     <state x="1221" y="345" key="SettingsEditor" timestamp="1602145391969">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1221" y="345" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1602145391969" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/database/factories/ProductFactory.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
