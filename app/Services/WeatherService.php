@@ -4,14 +4,16 @@ namespace App\Services;
 use App\Repositories\WeatherRepository;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
+use App\Models\Weather;
 
 class WeatherService
 {
-    public function __construct(WeatherRepository $weather)
+    public function __construct(ProductService $productService)
     {
-        $this->weather = $weather;
+        $this->productService = $productService;
     }
-    public function index(Request $request, $placecode)
+
+    public function getWeather(Request $request, $placecode)
     {
         try {
 
@@ -29,39 +31,55 @@ class WeatherService
             if($response->getStatusCode() == 200) {
                 $contents = json_decode($response->getBody(), true);
 
-                $weatherArray = [
+                $date = [
                     $day1 = $contents['forecastTimestamps'][0]['forecastTimeUtc'],
                     $day2 = $contents['forecastTimestamps'][24]['forecastTimeUtc'],
-                    $day3 = $contents['forecastTimestamps'][48]['forecastTimeUtc'],
+                    $day3 = $contents['forecastTimestamps'][48]['forecastTimeUtc']
+                ];
+
+                $condition = [
                     $weatherDay1 = $contents['forecastTimestamps'][0]['conditionCode'],
                     $weatherDay2 = $contents['forecastTimestamps'][24]['conditionCode'],
                     $weatherDay3 = $contents['forecastTimestamps'][48]['conditionCode'],
                 ];
 
+                $recommendedProduct = $this->productService->getProduct($condition[0]);
+                $recommendedProduct2 = $this->productService->getProduct($condition[1]);
+                $recommendedProduct3 = $this->productService->getProduct($condition[2]);
+
+
                 return  [
                     'city' => $placecode,
+                   [
+                       'recommendations',
+
                     [
-                        'date' => $day1,
+                        'date' => $date[0],
                         'city' => $placecode,
-                        'current_weather' => $weatherDay1,
+                        'product' => $recommendedProduct
+
+                    ],
+
+
+                    [
+                        'date' => $date[1],
+                        'city' => $placecode,
+                        'product' => $recommendedProduct2
                     ],
 
                     [
-                        'date' => $day2,
+                        'date' => $date[2],
                         'city' => $placecode,
-                        'current_weather' => $weatherDay2,
+                        'product' => $recommendedProduct3
                     ],
 
-                    [
-                        'date' => $day3,
-                        'city' => $placecode,
-                        'current_weather' => $weatherDay3,
-                    ]
-                        ];
+                        ]
+                    ];
 
             }
         } catch(Exception $e) {
             echo "Error: " . $e->getMessage();
         }
     }
+
 }

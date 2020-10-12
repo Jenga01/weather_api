@@ -20,7 +20,7 @@ class WeatherController extends Controller
 
     public function index(Request $request, $postcode){
 
-        $weather = $this->weatherservice->index($request, $postcode);
+        $weather = $this->weatherservice->getWeather($request, $postcode);
 
         return $weather;
     }

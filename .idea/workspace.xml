@@ -21,7 +21,16 @@
   <component name="ChangeListManager">
     <list default="true" id="7aa6beea-2f3a-489e-93b4-201cf59331f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WeatherController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/WeatherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/WeatherController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Weather.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Weather.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/WeatherProduct.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/WeatherRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/WeatherRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/WeatherService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/WeatherService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ProductFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ProductFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_08_124029_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_08_124028_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_10_124339_create_weather_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_10_124338_create_weather_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_10_124814_create_weather_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_10_124818_create_weather_products_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
@@ -197,7 +206,9 @@
       <workItem from="1602229576452" duration="9092000" />
       <workItem from="1602247781471" duration="1342000" />
       <workItem from="1602266607953" duration="3013000" />
-      <workItem from="1602333330474" duration="6926000" />
+      <workItem from="1602333330474" duration="12401000" />
+      <workItem from="1602495443291" duration="10463000" />
+      <workItem from="1602510996009" duration="1448000" />
     </task>
     <servers />
   </component>
@@ -217,18 +228,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1416" y="490" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1602333671794">
+    <state x="1416" y="490" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1602497387616">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1416" y="490" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1602333671794" />
+    <state x="1416" y="490" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1602497387616" />
     <state x="1485" y="381" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602149712304">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1485" y="381" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1602149712304" />
-    <state x="1450" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602338658773">
+    <state x="1450" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602501777737">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1450" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1602338658773" />
+    <state x="1450" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1602501777737" />
     <state x="1500" y="455" key="FileChooserDialogImpl" timestamp="1602249129001">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -249,21 +260,25 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="3397" height="401" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1602145351389" />
-    <state x="1466" y="423" key="NewPhpClassDialog" timestamp="1602337442094">
+    <state x="1466" y="423" key="NewPhpClassDialog" timestamp="1602497484375">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1466" y="423" key="NewPhpClassDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1602337442094" />
+    <state x="1466" y="423" key="NewPhpClassDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1602497484375" />
     <state x="1221" y="345" key="SettingsEditor" timestamp="1602145391969">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1221" y="345" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1602145391969" />
+    <state x="1376" y="330" key="run.anything.popup" timestamp="1602497889183">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1376" y="330" key="run.anything.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1602497889183" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/database/factories/ProductFactory.php</url>
-          <line>4</line>
+          <line>3</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

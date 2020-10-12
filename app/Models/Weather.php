@@ -9,5 +9,12 @@ class Weather extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'condition'
+    ];
     public $timestamps = false;
+
+    public function products() {
+        return $this->belongsToMany(Product::class);
+    }
 }
