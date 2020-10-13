@@ -10,6 +10,7 @@ Create a service, which returns product recommendations depending on the weather
 - Meteo.lt API
 - MySQL
 - Faker library
+- https://github.com/renoki-co/laravel-eloquent-query-cache
 
 ## Setup
 
