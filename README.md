@@ -26,7 +26,7 @@ Populate database with fake data run: `php artisan db:seed`
 
 ## Usage
 
-Enter `api/products/recommended/{city}` in your browser or postman
+Enter `api/products/recommended/{lithuanian-city}` e.g. `api/products/recommended/vilnius}` in your browser or Postman
 
 Expected result:
 
