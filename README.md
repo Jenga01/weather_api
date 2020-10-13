@@ -36,23 +36,24 @@ Expected result:
     "0": [
         "recommendations",
         {
-            "date": "2020-10-13 08:00:00",
-            "city": "vilnius",
-            "0": {
-                "id": 10,
-                "condition": "moderate-rain",
-                "products": [
-                    {
-                        "id": 11,
-                        "name": "mollitia eum ut",
-                        "sku": "ABC605",
-                        "price": 89,
-                        "pivot": {
-                            "weather_id": 10,
-                            "product_id": 11
+            "date": "2020-10-13 11:00:00",
+            "0": [
+                {
+                    "id": 2,
+                    "condition": "light-rain",
+                    "products": [
+                        {
+                            "name": "officiis odio libero",
+                            "sku": "ABC541",
+                            "price": 78
+                        },
+                        {
+                            "name": "doloremque voluptas cupiditate",
+                            "sku": "ABC791",
+                            "price": 72
                         }
-                    }
-                ]
-            }
+                    ]
+                }
+            ]
         },
  ```
