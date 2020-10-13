@@ -36,27 +36,23 @@ Expected result:
     "0": [
         "recommendations",
         {
-            "date": "2020-10-12 14:00:00",
+            "date": "2020-10-13 08:00:00",
             "city": "vilnius",
-            "product": [
-                {
-                    "id": 8,
-                    "condition": "isolated-clouds",
-                    "products": [
-                        {
-                            "id": 13,
-                            "name": "soluta vero quidem",
-                            "sku": "ABC880",
-                            "price": 98,
-                            "created_at": null,
-                            "updated_at": null,
-                            "pivot": {
-                                "weather_id": 8,
-                                "product_id": 13
-                            }
+            "0": {
+                "id": 10,
+                "condition": "moderate-rain",
+                "products": [
+                    {
+                        "id": 11,
+                        "name": "mollitia eum ut",
+                        "sku": "ABC605",
+                        "price": 89,
+                        "pivot": {
+                            "weather_id": 10,
+                            "product_id": 11
                         }
-                    ]
-                }
-            ]
+                    }
+                ]
+            }
         },
  ```
