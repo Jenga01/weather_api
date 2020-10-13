@@ -3,7 +3,6 @@ namespace App\Services;
 
 use App\Models\Weather;
 
-
 class ProductService
 {
     public function getProduct($condition)

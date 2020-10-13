@@ -20,21 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7aa6beea-2f3a-489e-93b4-201cf59331f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Services/RecommendedProductService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/weather_API.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/weather_API.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/WeatherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/WeatherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Weather.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Weather.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Interfaces/ProductInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Interfaces/ProductInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Interfaces/WeatherRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Interfaces/WeatherRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/WeatherRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/WeatherRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Interfaces/ResponseInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Interfaces/ResponseInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/MeteoDataService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/MeteoDataService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Services/ProductService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/ProductService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/WeatherService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ProductFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ProductFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_08_124028_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_08_124028_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/RecommendedProductService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/RecommendedProductService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +180,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\weather_API\app\Services" />
       <recent name="C:\xampp\htdocs\weather_API\app\Http\Controllers\API" />
       <recent name="C:\xampp\htdocs\weather_API\app\Http\Controllers" />
     </key>
@@ -213,7 +208,7 @@
       <workItem from="1602495443291" duration="10463000" />
       <workItem from="1602510996009" duration="3640000" />
       <workItem from="1602574088900" duration="3702000" />
-      <workItem from="1602580805775" duration="11974000" />
+      <workItem from="1602580805775" duration="14328000" />
     </task>
     <servers />
   </component>

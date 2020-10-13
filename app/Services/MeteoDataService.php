@@ -1,10 +1,11 @@
 <?php
-namespace App\Repositories;
+namespace App\Services;
 
+use App\Repositories\Interfaces\ResponseInterface;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 
-class MeteoDataService implements Interfaces\ResponseInterface
+class MeteoDataService implements ResponseInterface
 {
     public function getMeteoData(Request $request, $placecode)
     {

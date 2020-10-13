@@ -1,8 +1,6 @@
 <?php
 namespace App\Services;
 
-use App\Repositories\MeteoDataService;
-use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 
 class RecommendedProductService

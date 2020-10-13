@@ -6,7 +6,6 @@ use App\Http\Resources\Weather;
 use App\Services\RecommendedProductService;
 use Illuminate\Http\Request;
 
-
 class WeatherController extends Controller
 {
     protected $recommendedProduct;
