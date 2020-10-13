@@ -57,3 +57,6 @@ Expected result:
             ]
         },
  ```
+## Running feature tests
+
+Execute `vendor/bin/phpunit` from the root folder
