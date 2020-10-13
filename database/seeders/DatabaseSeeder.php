@@ -1,11 +1,9 @@
 <?php
 namespace Database\Seeders;
 
-use Faker\Factory;
 use Illuminate\Database\Seeder;
 use App\Models\Product;
 use App\Models\Weather;
-use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {

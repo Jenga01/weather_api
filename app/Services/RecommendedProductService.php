@@ -33,7 +33,6 @@ class RecommendedProductService
                 ];
 
                 $conditionData = [
-
                     $conditionDataDay1 = $this->productService->getProduct($condition[0]),
                     $conditionDataDay2 = $this->productService->getProduct($condition[1]),
                     $conditionDataDay3 = $this->productService->getProduct($condition[2]),
@@ -62,7 +61,6 @@ class RecommendedProductService
 
                     ]
                 ];
-
             }
         }
         catch

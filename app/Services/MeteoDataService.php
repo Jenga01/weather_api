@@ -17,7 +17,6 @@ class MeteoDataService implements ResponseInterface
             'query' => [
                 $placecode => $request->city,
             ],
-
         ]);
         return $response;
     }
