@@ -2,7 +2,6 @@
 namespace Database\Factories;
 
 use App\Models\Product;
-use Faker\Generator as Faker;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ProductFactory extends Factory
@@ -20,11 +19,8 @@ class ProductFactory extends Factory
      * @return array
      */
 
-
-
     public function definition()
     {
-
         {
             return [
                 'name' => $this->faker->words(3, true),
@@ -32,7 +28,6 @@ class ProductFactory extends Factory
                 'price' => $this->faker->randomFloat(2, 10, 100),
 
             ];
-
         }
     }
 }

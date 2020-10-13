@@ -2,15 +2,12 @@
 namespace App\Services;
 
 use App\Models\Weather;
-use App\Repositories\ProductRepository;
-use Illuminate\Http\Request;
+
 
 class ProductService
 {
-
     public function getProduct($condition)
     {
-       return Weather::with('products')->where('condition', $condition)->get();
+       return Weather::with('products:name,sku,price')->where('condition', $condition)->cacheFor(300)->get(); //query cached for 5mins
     }
-
 }

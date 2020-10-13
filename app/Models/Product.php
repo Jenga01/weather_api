@@ -17,6 +17,8 @@ class Product extends Model
     ];
     public $timestamps = false;
 
+    protected $hidden = ['pivot'];
+
     public function weathers(){
         return $this->belongsToMany(Weather::class);
     }

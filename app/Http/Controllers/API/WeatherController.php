@@ -1,28 +1,26 @@
 <?php
-
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Weather;
-use App\Services\WeatherService;
-use GuzzleHttp\Client;
+use App\Services\RecommendedProductService;
 use Illuminate\Http\Request;
 
 
 class WeatherController extends Controller
 {
-    protected $weatherservice;
+    protected $recommendedProduct;
 
-    public function __construct(WeatherService $weatherservice)
+    public function __construct(RecommendedProductService $recommendedProduct)
     {
-        $this->weatherservice = $weatherservice;
+        $this->recommendedProduct = $recommendedProduct;
     }
 
-    public function index(Request $request, $postcode){
+    public function index(Request $request, $placecode)
+    {
+        $weatherProduct = $this->recommendedProduct->getRecommendedProduct($request, $placecode);
 
-        $weather = $this->weatherservice->getWeather($request, $postcode);
-
-        return $weather;
+        return $weatherProduct;
     }
 
 }

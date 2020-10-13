@@ -7,7 +7,7 @@ class WeatherRepository implements WeatherRepositoryInterface
 {
     protected $weather;
 
-    public function getWeather()
+    public function getRecommendedProduct()
     {
         return $this->weather->all();
     }
